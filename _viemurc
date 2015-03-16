@@ -1,0 +1,30 @@
+nnoremap <esc> :noh<cr><esc>
+
+vmap <TAB> >gv
+vmap <S-TAB> <gv
+vmap <TAB> >gv
+vmap <S-TAB> <gv
+
+map L zl
+map H zh
+
+map <Space> <C-f>
+map <BS> <C-b>
+map <Q> <C-Q>
+map <Bslash>c gS:vsc Edit.CommentSelection<CR>
+map <Bslash>u gS:vsc Edit.UncommentSelection<CR>
+map <Bslash>o gS:vsc ReSharper.ReSharper_GotoFile<CR>
+map <Bslash>m gS:vsc ReSharper.ReSharper_GotoFileMember<CR>
+map <Bslash>U gS:vsc ReSharper.ReSharper_FindUsages<CR>
+map <Bslash>x gS:vsc ReSharper.ReSharper_RefactorThis<CR>
+map <Bslash>i gS:vsc ReSharper.ReSharper_InspectThis<CR>
+map <Bslash>r gS:vsc ReSharper.ReSharper_Rename<CR>
+map <Bslash>q gS:vsc ReSharper_QuickFix<CR>
+map Y y$
+nmap <A-n> :vsc View.NextError<CR>
+nmap <A-p> :vsc View.PreviousError<CR>
+:nnoremap <esc> :noh<return><esc>
+nmap { :vsc ReSharper.Resharper_GotoNextMethod<CR>
+nmap } :vsc ReSharper.Resharper_GotoPrevMethod<CR>
+
+map <Bslash>f :vsc Edit.FindinFiles 
